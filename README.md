@@ -29,7 +29,7 @@ After providing the account information in login page, a student can see the fol
 ![Screenshot (211)](https://user-images.githubusercontent.com/37974385/112328236-59acec80-8ce0-11eb-8068-66c9eae2ccd9.png)
 ![Screenshot (213)](https://user-images.githubusercontent.com/37974385/112328423-83661380-8ce0-11eb-9ae0-b55d0ed266a3.png)
 
-After clicking on the 'View Seat Plan' button, he/she can see his/her seat plan as the following.
+After clicking on the 'View Seat Plan' button, he/she can see his/her seat plan as the following. The built in capacity of each seatbench is 3. Note that, his/her student ID is highlighted in the figure and he/she can't sit exactly beside of another student from the same batch.
 
 ![Screenshot (214)](https://user-images.githubusercontent.com/37974385/112328565-a8f31d00-8ce0-11eb-9356-ea4245c4df60.png)
 
