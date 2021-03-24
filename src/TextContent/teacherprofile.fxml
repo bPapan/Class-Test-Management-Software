@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.teacher.TeacherprofileController">
+    <stylesheets>
+        <URL value="@teacherprofilecss.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="1042.0" styleClass="background">
+         <children>
+            <TableView fx:id="teacherroutine" layoutX="220.0" layoutY="189.0" prefHeight="571.0" prefWidth="580.0">
+               <columns>
+                  <TableColumn fx:id="date" prefWidth="168.0" text="Date">
+                     <styleClass>
+                        <String fx:value="textproperty" />
+                        <String fx:value="background" />
+                     </styleClass>
+                  </TableColumn>
+                  <TableColumn fx:id="course" prefWidth="302.0" text="Course">
+                     <styleClass>
+                        <String fx:value="textproperty" />
+                        <String fx:value="background" />
+                     </styleClass>
+                  </TableColumn>
+                  <TableColumn fx:id="ctno" prefWidth="109.0" text="CT no.">
+                     <styleClass>
+                        <String fx:value="textproperty" />
+                        <String fx:value="background" />
+                     </styleClass>
+                  </TableColumn>
+               </columns>
+               <effect>
+                  <InnerShadow color="#5e7572" />
+               </effect>
+               <styleClass>
+                  <String fx:value="profileTitle" />
+                  <String fx:value="background" />
+               </styleClass>
+            </TableView>
+            <Button fx:id="invigilations" layoutX="800.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleinvigilation" prefHeight="17.0" prefWidth="206.0" text="Invigilations">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="1.0" prefHeight="93.0" prefWidth="1039.0" styleClass="top-segment">
+               <children>
+                  <Text fill="#78e1e4" fontSmoothingType="LCD" layoutX="418.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textproperty" text="TEACHER MODE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="tlogout2" layoutX="851.0" layoutY="28.0" onAction="#teacherlogout2" text="logout" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="teachername" fill="#4bcdb3" layoutX="364.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Teacher">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentdate" fill="#4ddba6" fontSmoothingType="LCD" layoutX="71.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: dd/mm/yy">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="71.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

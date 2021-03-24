@@ -1,0 +1,28 @@
+saifur rahman:CSE107;
+mahfuzul islam:CSE107;
+mohammad kaykobad:CSE103;
+sukarna barua:CSE103;
+teacher1:CSE207;
+teacher15:CSE207
+teacher2:CSE215;
+teacher16:CSE215;
+teacher3:CSE211;
+teacher17:CSE211;
+teacher4:CSE305;
+teacher18:CSE305;
+teacher5:CSE307;
+teacher19:CSE307;
+teacher6:CSE309;
+teacher20:CSE309;
+teacher7:CSE311;
+teacher21:CSE311;
+teacher8:CSE315;
+teacher22:CSE315;
+teacher9:CSE405;
+teacher23:CSE405;
+teacher10:CSEOPTION1;
+teacher11:CSEOPTION2;
+teacher12:CSE409;
+teacher24:CSE409;
+teacher13:CSEOPTION3;
+teacher14:CSEOPTION4;

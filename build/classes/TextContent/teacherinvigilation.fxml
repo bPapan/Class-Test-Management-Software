@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1042.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.teacher.TeacherinvigilationController">
+   <stylesheets>
+        <URL value="@teacherprofilecss.css" />
+    </stylesheets>
+    
+    <children>
+      <TableView fx:id="teacherroutine" layoutX="277.0" layoutY="185.0" prefHeight="571.0" prefWidth="471.0">
+         <columns>
+            <TableColumn fx:id="date" prefWidth="236.0" text="Date">
+               <styleClass>
+                  <String fx:value="textproperty" />
+                  <String fx:value="background" />
+               </styleClass>
+            </TableColumn>
+            <TableColumn fx:id="roomno" prefWidth="234.0" text="Room no.">
+               <styleClass>
+                  <String fx:value="textproperty" />
+                  <String fx:value="background" />
+               </styleClass>
+            </TableColumn>
+         </columns>
+         <effect>
+            <InnerShadow color="#5e7572" />
+         </effect>
+         <styleClass>
+            <String fx:value="profileTitle" />
+            <String fx:value="background" />
+         </styleClass>
+      </TableView>
+      <Button fx:id="routine" layoutX="772.0" layoutY="115.0" mnemonicParsing="false" onAction="#backtoroutine" prefHeight="58.0" prefWidth="230.0" text="Back to Routine">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="1.0" prefHeight="96.0" prefWidth="1039.0" styleClass="top-segment">
+         <children>
+            <Text fill="#78e1e4" fontSmoothingType="LCD" layoutX="410.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textproperty" text="TEACHER MODE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="tlogout" layoutX="849.0" layoutY="28.0" onAction="#teacherlogout" text="logout" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="teachername" fill="#4bcdb3" layoutX="413.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome teacher">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentdate" fill="#4ddba6" fontSmoothingType="LCD" layoutX="71.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: dd/mm/yy">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.student.StudentseatplanController">
+   <children>
+      <AnchorPane layoutX="-36.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1138.0" styleClass="background" stylesheets="@studentseatplancss.css">
+         <children>
+            <Button fx:id="seatplantoroutine" layoutX="850.0" layoutY="106.0" mnemonicParsing="false" onAction="#gotoroutine" prefHeight="58.0" prefWidth="241.0" text="Back to routine">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="1.0" prefHeight="92.0" prefWidth="1150.0" styleClass="top-segment">
+               <children>
+                  <Text fill="#78e1e4" fontSmoothingType="LCD" layoutX="479.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textproperty" text="STUDENT MODE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="logout" layoutX="967.0" layoutY="23.0" onAction="#processlogout" text="logout" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="roomno" fill="#4bcdb3" layoutX="475.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome student">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentdate" fill="#4ddba6" fontSmoothingType="LCD" layoutX="94.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: dd/mm/yy">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Label layoutX="94.0" layoutY="478.0" />
+            <Text layoutX="36.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="1.0" />
+            <AnchorPane layoutX="46.0" layoutY="183.0" prefHeight="590.0" prefWidth="1077.0" styleClass="background4">
+               <children>
+                  <TableView fx:id="Group1" layoutX="20.0" layoutY="143.0" prefHeight="386.0" prefWidth="340.0">
+                     <columns>
+                        <TableColumn id="Group1Column1" fx:id="column1" prefWidth="112.0" sortable="false" text="Column1">
+                           <styleClass>
+                              <String fx:value="textproperty2" />
+                              <String fx:value="background4" />
+                           </styleClass></TableColumn>
+                        <TableColumn id="Group1Column2" fx:id="column2" prefWidth="112.0" sortable="false" text="Column2">
+                           <styleClass>
+                              <String fx:value="background4" />
+                              <String fx:value="textproperty2" />
+                           </styleClass></TableColumn>
+                        <TableColumn id="Group1Column3" fx:id="column3" prefWidth="115.0" sortable="false" text="Column3">
+                           <styleClass>
+                              <String fx:value="background4" />
+                              <String fx:value="textproperty2" />
+                           </styleClass></TableColumn>
+                     </columns>
+                     <styleClass>
+                        <String fx:value="profileTitle" />
+                        <String fx:value="textproperty2" />
+                        <String fx:value="background4" />
+                     </styleClass>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TableView>
+                  <TableView fx:id="Group2" layoutX="364.0" layoutY="143.0" prefHeight="386.0" prefWidth="350.0">
+                     <columns>
+                        <TableColumn id="Group2Column1" fx:id="column4" prefWidth="117.0" sortable="false" text="Column4">
+                           <styleClass>
+                              <String fx:value="background4" />
+                              <String fx:value="textproperty2" />
+                           </styleClass></TableColumn>
+                        <TableColumn id="Group2Column2" fx:id="column5" prefWidth="118.0" sortable="false" text="Column5">
+                           <styleClass>
+                              <String fx:value="textproperty2" />
+                              <String fx:value="background4" />
+                           </styleClass>
+                        </TableColumn>
+                        <TableColumn id="Group2Column3" fx:id="column6" prefWidth="114.0" sortable="false" text="Column6">
+                           <styleClass>
+                              <String fx:value="textproperty2" />
+                              <String fx:value="background4" />
+                           </styleClass></TableColumn>
+                     </columns>
+                     <styleClass>
+                        <String fx:value="background4" />
+                        <String fx:value="profileTitle" />
+                     </styleClass>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TableView>
+                  <TableView fx:id="Group3" layoutX="723.0" layoutY="143.0" prefHeight="386.0" prefWidth="340.0">
+                     <columns>
+                        <TableColumn id="Group3Column1" fx:id="column7" prefWidth="126.0" sortable="false" text="Column7">
+                           <styleClass>
+                              <String fx:value="background4" />
+                              <String fx:value="textproperty2" />
+                           </styleClass></TableColumn>
+                        <TableColumn id="Group3Column2" fx:id="column8" prefWidth="92.0" sortable="false" text="Column8">
+                           <styleClass>
+                              <String fx:value="background4" />
+                              <String fx:value="textproperty2" />
+                           </styleClass></TableColumn>
+                        <TableColumn id="Group3Column3" fx:id="column9" prefWidth="121.0" sortable="false" text="Column9">
+                           <styleClass>
+                              <String fx:value="background4" />
+                              <String fx:value="textproperty2" />
+                           </styleClass></TableColumn>
+                     </columns>
+                     <styleClass>
+                        <String fx:value="background4" />
+                        <String fx:value="profileTitle" />
+                     </styleClass>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TableView>
+                  <Text fill="#21c6b8" layoutX="69.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Column 1 is the closest to the door">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

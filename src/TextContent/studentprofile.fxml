@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="778.0" prefWidth="1040.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.student.StudentprofileController">
+    <stylesheets>
+        <URL value="@studentprofilecss.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1040.0" styleClass="background" stylesheets="@studentprofilecss.css">
+         <children>
+            <TableView fx:id="studentroutine" layoutX="230.0" layoutY="193.0" prefHeight="571.0" prefWidth="580.0">
+               <columns>
+                  <TableColumn fx:id="date" prefWidth="168.0" text="Date">
+                     <styleClass>
+                        <String fx:value="textproperty" />
+                        <String fx:value="background" />
+                     </styleClass></TableColumn>
+                  <TableColumn fx:id="course" prefWidth="302.0" text="Course">
+                     <styleClass>
+                        <String fx:value="textproperty" />
+                        <String fx:value="background" />
+                     </styleClass></TableColumn>
+                  <TableColumn fx:id="ctno" prefWidth="109.0" text="CT no.">
+                     <styleClass>
+                        <String fx:value="textproperty" />
+                        <String fx:value="background" />
+                     </styleClass></TableColumn>
+               </columns>
+               <effect>
+                  <InnerShadow color="#5e7572" />
+               </effect>
+               <styleClass>
+                  <String fx:value="profileTitle" />
+                  <String fx:value="background" />
+               </styleClass>
+            </TableView>
+            <Button fx:id="sear" layoutX="788.0" layoutY="113.0" mnemonicParsing="false" onAction="#gotoseatplan" prefHeight="17.0" prefWidth="206.0" text="View seat plan">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <AnchorPane prefHeight="99.0" prefWidth="1040.0" styleClass="top-segment">
+               <children>
+                  <Text fill="#78e1e4" fontSmoothingType="LCD" layoutX="424.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textproperty" text="STUDENT MODE">
+                     <font>
+                        <Font size="30.0" />
+                     </font></Text>
+                  <Hyperlink fx:id="logout" layoutX="869.0" layoutY="29.0" onAction="#processlogout" text="logout" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="studentname" fill="#4bcdb3" layoutX="373.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome student">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentdate" fill="#4ddba6" fontSmoothingType="LCD" layoutX="61.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: dd/mm/yy">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Label layoutX="94.0" layoutY="478.0" />
+            <Text layoutX="36.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="1.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
