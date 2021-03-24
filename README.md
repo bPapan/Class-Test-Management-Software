@@ -11,11 +11,12 @@ Provide correct user name and password according to the data in _user_data.txt_ 
 
 ## Applications
 
-There are three basic applications of this software:
+The basic applications of this software:
 
 1. Generating a routine of the class tests of the provided courses and respective credit hours based on the available dates. All of these information should be stored in the respective files in the 'src/TextContent' directory.
-2. Providing a student the routine of the class tests for his/her courses and the seat plan of the class tests. Any number of students can see their respective class test routine and seat plan simultaneously.
+2. Providing a student the routine of the class tests for his/her courses and the seat plan of the class tests. 
 3. Informing a teacher about the dates of the class tests of the courses that he/she teaches. Moreover this software will inform a teacher about the date and room no. of the class tests that he/she has to invigilate.
+4. Allowing more than one user to connect to the server and get necessary information.
 
 
 # Modes
